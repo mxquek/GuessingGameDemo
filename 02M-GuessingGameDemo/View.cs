@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _02M_GuessingGameDemo
 {
-    public class View
+    public class View   //Same as ConsoleIO
     {
         public static void DisplayMessage(string message)
         {
@@ -20,7 +20,7 @@ namespace _02M_GuessingGameDemo
 
         public static int GetMaxNum()
         {
-            return Validation.PromptUser4Int("Enter the max number to guess.");
+            return Validation.PromptUser4Int("Enter the max number to guess:");
         }
     }
 }

@@ -6,7 +6,8 @@ namespace _02M_GuessingGameDemo
     {
         static void Main()
         {
-            Console.WriteLine("Hello World!");
+            Startup game = new Startup();
+            game.Run();
         }
     }
 }

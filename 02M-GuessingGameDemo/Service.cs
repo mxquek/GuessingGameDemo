@@ -8,13 +8,8 @@ namespace _02M_GuessingGameDemo
 {
     public class Service
     {
-        //GuessCount
-        //MaxNum
-        //Target
-
         //handles business process, state of application
         private Random _random = new Random();   //also can be written: private readonly Random _random = new();
-
 
         public int GuessCount { get; set; }
         public int TargetNum { get; private set; }
