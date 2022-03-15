@@ -11,14 +11,18 @@ namespace _02M_GuessingGameDemo
         //TODO: what properties do i need?
 
         //TODO: Add methods
+        private Service _service = new Service();
+
         public void Run()
         {
-            Console.WriteLine("Running");
+            int maxNum = View.GetMaxNum();
+            _service.CreateRandomNumber(maxNum);
+
         }
 
         public void CheckGuess()
         {
-            //TODO: prompt user for guess and max
+            View.DisplayMessage("Guess a number between 1 and ....");
         }
     }
 }
